@@ -1,32 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "menu.h"
 #include "altas.h"
-
-#ifndef STRUCTS_H
-#define STRUCTS_H
-
-struct alumno{
-    char matricula[10];
-    char carrera[5];
-    int semestre;
-    char corre [23];
-    float calif[5][5];
-};
-
-struct persona{
-    char *nombre;
-    int edad;
-    char genero;
-    char fn[8];
-    struct alumno *ptrAlum;
-    struct persona *sig;
-};
-
-#endif
+#include "struct.h"
 
 int main(void){
     int op;
     struct persona *ptr=NULL;
+    srand(time(NULL));
 
     do{
         op=menuPrincipal();
@@ -39,7 +20,11 @@ int main(void){
                 break;
             case 3:
                 break;
+            case 0:
+                printf("Hasta luego.\n");
+                break;
             default: 
+                printf("Opcion no valida\n");
                 break;
         }
     }while(op!=0);

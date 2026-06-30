@@ -41,12 +41,33 @@ static inline struct alumno *nuevaAlumno(void){
         printf("Matricula: ");
         scanf("%9s", ptrTemp->matricula);
         printf("Carrera: \n");
-        printf("D.S, I.F, L.B, C.A, L.A.T:\n");
-        scanf("%4s", ptrTemp->carrera);
+        printf("D.S, I.F, L.B, C.A, A.T:\n");
+        scanf("%s", ptrTemp->carrera);
         printf("Semestre: ");
         scanf("%d", &ptrTemp->semestre);
-        printf("Correo: ");
-        scanf("%22s", ptrTemp->correo);
+        //crear correo
+        char correo[30];
+        int i, j = 0;
+
+        /* 1. Primeros 4 de matrícula */
+        for (i = 0; i < 4; i++) {
+            correo[j++] = ptrTemp->matricula[i];
+        }
+
+        /* 2. 2 iniciales de carrera */
+        correo[j++] = ptrTemp->carrera[0];
+        correo[j++] = ptrTemp->carrera[1];
+
+        /* 3. Últimos 4 de matrícula */
+        for (i = 5; i < 9; i++) {
+            correo[j++] = ptrTemp->matricula[i];
+        }
+
+        /* Cerrar string */
+        correo[j] = '\0';
+
+        printf("Correo generado: %s\n", correo);
+        //Crear calificaciones
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 5; j++){
                 ptrTemp->calif[i][j] = (rand() % 101) / 10.0;
@@ -127,9 +148,12 @@ static inline void altas(struct persona **ptr){
                             }
                         }
                     }
-                    printf("Desea agregar a otra persona (s/n)?");
+                    printf("Desea dar de alta a otra persona (s/n)?");
                     scanf(" %c", &opc);
                 }while(opc == 's' || opc == 'S');
+                break;
+            case 0:
+                printf("Hasta luego.\n");
                 break;
             default: 
                 printf("Opcion no valida\n");

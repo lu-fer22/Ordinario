@@ -3,6 +3,8 @@
 #include "menu.h"
 #include "altas.h"
 #include "struct.h"
+#include "bajas.h"
+#include "mostrar.h"
 
 int main(void){
     int op;
@@ -17,6 +19,7 @@ int main(void){
                 altas(&ptr);
                 break;
             case 2:
+                bajas(&ptr);
                 break;
             case 3:
                 break;

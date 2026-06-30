@@ -35,7 +35,7 @@ static inline void mostrar(struct persona **ptr){
                         printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                         printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                         printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                        printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                        printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                         printf("Calificaciones:\n");
 
@@ -79,7 +79,7 @@ static inline void mostrar(struct persona **ptr){
                             printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                             printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                             printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                            printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                            printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                             printf("\n");
                         }
@@ -112,7 +112,7 @@ static inline void mostrar(struct persona **ptr){
                             printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                             printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                             printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                            printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                            printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                             printf("\n");
                         }
@@ -148,7 +148,7 @@ static inline void mostrar(struct persona **ptr){
                             printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                             printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                             printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                            printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                            printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                             printf("\n");
                         }
@@ -185,7 +185,7 @@ static inline void mostrar(struct persona **ptr){
                             printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                             printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                             printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                            printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                            printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                             printf("\n");
                         }
@@ -221,7 +221,7 @@ static inline void mostrar(struct persona **ptr){
                             printf("Matricula: %s\n", ptrTemp->ptrAlum->matricula);
                             printf("Carrera: %s\n", ptrTemp->ptrAlum->carrera);
                             printf("Semestre: %d\n", ptrTemp->ptrAlum->semestre);
-                            printf("Correo: %s\n", ptrTemp->ptrAlum->corre);
+                            printf("Correo: %s\n", ptrTemp->ptrAlum->correo);
 
                             printf("\n");
                         }

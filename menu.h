@@ -26,6 +26,29 @@ static inline int menuAltas(){
     return op;
 }
 
+static inline int menuBajas(){
+    int op;
+    printf("\nBAJAS\n");
+    printf("1.- Una persona\n");
+    printf("2.- Varias personas\n");
+    printf("3.- Todos\n");
+    printf("0.- Salir\n");
+    scanf("%d", &op);
+    return op;
+}
 
+static inline int menuMostrar(){
+    int op;
+    printf("\nMOSTRAR\n");
+    printf("1.- Todos\n");
+    printf("2.- Carrera\n");
+    printf("3.- Semestre\n");
+    printf("4.- Carrera y Semestre\n");
+    printf("5.- Nombre\n");
+    printf("6.- Matricula\n");
+    printf("0.- Salir\n");
+    scanf("%d", &op);
+    return op;
+}
 
 #endif

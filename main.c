@@ -24,7 +24,7 @@ int main(void){
                 bajas(&ptr);
                 break;
             case 3:
-                funEsp(&ptr);
+                mostrar(&ptr);
                 break;
             case 0:
                 salida(&ptr);
